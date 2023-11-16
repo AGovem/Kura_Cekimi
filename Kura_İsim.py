@@ -52,7 +52,7 @@ while True:
 
 		i = input("Yarışmacı Adı Girin (Kuraya Geçmek İçin 'd'ye Bas) : ")
 		
-		dosya = open("Yarışmacı_Listesi.txt","a")
+		dosya = open(dsy,"a")
 		dosya.write(i+"\n")
 		dosya.close()
 		os.system("cls")
@@ -60,7 +60,7 @@ while True:
 	elif a == "2":
 
 		os.system("cls")
-		dosya = open("Yarışmacı_Listesi.txt","r")
+		dosya = open(dsy,"r")
 		b = dosya.readlines()
 		yarışmacı = random.choice(b)
 		time.sleep(1)
